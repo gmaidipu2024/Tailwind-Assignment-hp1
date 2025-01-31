@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Your Pets</title>
+  <!-- Tailwind cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awsome -->
   <script src="https://kit.fontawesome.com/c3e670ad26.js" crossorigin="anonymous"></script>
+   <!-- Font DaisyUi -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       theme: {
-        
         extend: {
            colors: {
             primary: '#FFF9F4',
@@ -23,6 +25,7 @@
     }
   </script>
   <style>
+    /* Google Font */
     @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
     @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
@@ -43,6 +46,7 @@
     </style>
 </head>
 <body class=" "> 
+  <!-- Navbar -->
   <nav class="bg-primary container mx-auto">
     <div class="flex justify-between items-center px-2 py-1 ">
       <div class="block md:hidden">
@@ -73,9 +77,9 @@
           </div>
           
           <div class="gap-2 hidden md:block">
-            <button class=" border border-yellow-200 px-5 py-2 rounded-sm  "> Login</button>
+            <button class=" border border-yellow-200 px-5 py-2 rounded-md font-semibold  "> Login</button>
            
-            <button class="bg-[#ffdc26] text-black px-5 py-2 rounded-md">Register</button>
+            <button class="bg-[#ffdc26] text-black px-5 py-2 rounded-md font-semibold">Register</button>
           </div>
         </div>
         
@@ -83,8 +87,17 @@
       </div>
      
   </nav>
-  
-  
+  <!-- Hero -->
+  <section class="container mx-auto px-2 relative ">
+    <div class="md:w-1/2 mt-12 md:ml-10 lg:ml-24 relative z-10">
+      <h1 class="font2 text-3xl md:text-4xl md:leading-[60px]">Pamper your Pet, <br/> Because They Deserve <br/> The Best </h1>
+      <p class="font text-xl py-3 leading-8 text-[#111111] mb-2 opacity-70"> Discover a world of treats, toys, and essentials hand picked for your furry friends. Shop now and make tails wag with joy!</p>
+      <button class="bg-[#ffdc26] text-black px-5 py-2 rounded-md font-semibold">Find a Pet</button>
+    </div>
+    <div class="absolute -mt-[25%] -z-0">
+      <img src="./c1-assets/cat-big.png" alt="">
+    </div>
+  </section>
   
 </body>
 </html>
