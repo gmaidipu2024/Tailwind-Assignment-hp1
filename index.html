@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/c3e670ad26.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        
+        extend: {
+           colors: {
+            primary: '#FFF9F4',
+            
+          }
+          
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+    .font1{
+      font-family: "Sora", serif;
+    }
+    .font2{
+      font-family: "ADLaM Display", serif;
+    }
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+
+    </style>
+</head>
+<body class=" "> 
+  <nav class="bg-primary container mx-auto">
+    <div class="flex justify-between items-center px-2 py-1 ">
+      <div class="block md:hidden">
+        <img src="./c1-assets/logo-header.png" alt="">
+      </div>
+      <div class="">
+        <i class="fa-solid fa-bars block md:hidden text-2xl "></i>
+      </div>
+    </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 justify-items-center  items-center py-2">
+        <div class="flex items-center gap-2">
+          <img class="hidden md:block" src="./c1-assets/logo-header.png" alt="">
+
+          <h2 class="hidden md:block text-2xl font1"> Browse <span class="text-yellow-300">4</span> Pets</h2>
+                    
+        </div>
+        
+        <div class="flex gap-4 font1 ">
+          <li class="list-none hidden md:block"><a class="" href="">Find the Pet</a></li>
+          <li class="list-none hidden md:block"><a href="">Breeds</a></li>
+          <li class="list-none hidden md:block"><a href="">Contact Us</a></li>
+        </div>
+       
+        <div class="flex gap-3 items-center">
+          <div class="hidden md:block gap-2">
+            <i class="fa-regular fa-bell text-xl"></i>
+            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+          </div>
+          
+          <div class="gap-2 hidden md:block">
+            <button class=" border border-yellow-200 px-5 py-2 rounded-sm  "> Login</button>
+           
+            <button class="bg-[#ffdc26] text-black px-5 py-2 rounded-md">Register</button>
+          </div>
+        </div>
+        
+        
+      </div>
+     
+  </nav>
+  
+  
+  
+</body>
+</html>
