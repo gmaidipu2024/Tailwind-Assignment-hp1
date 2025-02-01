@@ -55,7 +55,7 @@
       <div
         class="bg-primary grid grid-cols-2 md:grid-cols-3 justify-around items-center mx-auto py-3 px-3"
       >
-        <div class="flex items-center gap-2">
+        <div class="flex items-center  gap-2">
           <img
             class="hidden md:block"
             src="./c1-assets/logo-header.png"
@@ -96,7 +96,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-evenly items-center px-2 py-1">
+      <div class="flex justify-between items-center px-2 py-1">
         <div class="block md:hidden">
           <img src="./c1-assets/logo-header.png" alt="" />
         </div>
@@ -491,42 +491,47 @@
       </div>
     </section>
     <!-- Footer Part-1-->
-     <section class="container mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 justify-center place-content-between bg-white mt-11">
-        <div>
-          <img src="./c1-assets/cute-pet-mid.png" alt="">
+     <section class=" container mx-auto  relative mt-[300px]">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-center content-center absolute -mt-[60%] md:-mt-[15%] bg-[#FFF9F4] w-[98%] md:w-full rounded-xl px-3">
+        <div class="justify-self-center">
+          <img class="w-[50%] md:w-fit mx-auto" src="./c1-assets/cute-pet-mid.png" alt="">
         </div>
         <div>
-          <h1>Get Awsome News </h1>
-          <p>Exclusive Training Tips,trick and product more Details.</p>
+          <h1 class="font2 text-3xl py-2 md:py-6">Get Awsome News </h1>
+          <p class="font1 text-md py-2 md:py-6">Exclusive Training Tips,trick and product more Details.</p>
+          <input class="py-4 px-4 rounded-md w-[80%]  mb-6 outline-none" type="text" placeholder="Enter Email"> <br/>
+
           <button
-          class="bg-[#ffdc26] text-black px-5 py-2 rounded-md font-semibold"
+          class="bg-[#ffdc26] text-black px-6 py-2 mb-4 rounded-md font-semibold"
             > Subscribe</button>
         </div>
       </div>
+      
      </section>
 <!-- Footer Part-2-->
- <footer class="bg-[#ffdc26]">
-  <div class=" grid grid-cols-1 md:grid-cols-3 justify-center place-content-around">
-    <div>
-      <div><img src="./c1-assets/logo-header.png" alt=""></div>
-      <h2>T-Shirt for Dog</h2>
-      <p>Discover a world of treats, toys, and essentials hand picked for your furry friends.</p>
-      
-      
-      
-    </div>
-    <div>
-      <div>
-        <h4>Find The Pets</h4>
-        <h4>Breeds</h4>
-        <h4>Contact Us</h4>
+<footer class="bg-[#ffed93] ">
+  <div class=" grid grid-cols-1 md:grid-cols-3 content-center  md:pt-56 md:pb-32  pt-[100%] pb-24 container mx-auto px-2">
+    <div class="content-end">
+      <div class="flex gap-4 items-center pb-6"><img src="./c1-assets/pawprint 1.png" alt="">
+        <h2 class="hidden md:block text-2xl font1">
+          Browse <span class="text-yellow-600">4</span> Pets
+        </h2>
       </div>
+       <p class="font1 text-xl">Discover a world of treats, toys, and essentials hand picked for your furry friends.</p>
+      </div>
+    <div class="content-end mt-6 font-semibold" >
+        <h4 class="font1 text-xl py-2">Find The Pets</h4>
+        <h4 class="font1 text-xl py-2">Breeds</h4>
+        <h4 class="font1 text-xl py-2">Contact Us</h4>
     </div>
-    <div>
-    <h2>Follow Us</h2>
-    <div>
-
+    <div class="content-end">
+    <h2 class="font1 text-xl font-bold py-6">Follow Us</h2>
+    <div class="flex  gap-10 text-3xl">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-youtube"></i>
     </div>
     </div>
   </div>
