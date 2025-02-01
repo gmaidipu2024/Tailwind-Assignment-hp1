@@ -46,13 +46,22 @@
         margin: 0;
         box-sizing: border-box;
       }
+       @media only screen and (min-width: 640px) and (max-width:768px) {
+        #respon1 {
+          margin-bottom: -40%;
+        }
+        #respon2 {
+          padding-top: 60%;
+          
+        }
+      }
     </style>
   </head>
   <body class=" ">
     <!-- Navbar -->
-    <nav class="container mx-auto">
+    <nav class="container mx-auto ">
       <div
-        class="bg-primary grid grid-cols-2 md:grid-cols-3 justify-around items-center mx-auto py-3 px-3"
+        class="bg-primary grid grid-cols-2 md:grid-cols-3 justify-around items-center mx-auto py-3 px-3 "
       >
         <div class="flex items-center gap-2">
           <img
@@ -66,12 +75,12 @@
           </h2>
         </div>
 
-        <div class="flex gap-4 font1 justify-self-center">
+        <div class="flex gap-4 font1 justify-self-center items-center ">
           <li class="list-none hidden md:block">
-            <a class="" href="">Find the Pet</a>
+            <a class="md:text-xs lg:text-md" href="">Find the Pet</a>
           </li>
-          <li class="list-none hidden md:block"><a href="">Breeds</a></li>
-          <li class="list-none hidden md:block"><a href="">Contact Us</a></li>
+          <li class="list-none hidden md:block md:text-xs lg:text-md "><a href="">Breeds</a></li>
+          <li class="list-none hidden md:block md:text-xs  lg:text-md"><a href="">Contact Us</a></li>
         </div>
 
         <div class="flex gap-3 items-center justify-self-end">
@@ -104,10 +113,12 @@
         </div>
       </div>
     </nav>
+    
+    </nav>
     <!-- Hero -->
     <section class="container mx-auto relative md:mb-[500px] mb-[150px]">
       <div class="md:w-1/2 px-2 relative z-10">
-        <h1 class="font2 text-3xl md:text-4xl md:leading-[60px]">
+        <h1 class="font2 text-2xl md:text-4xl md:leading-[60px] w-full">
           Pamper your Pet, <br />
           Because They Deserve <br />
           The Best
@@ -210,28 +221,34 @@
         >
           Trending Pets Products
         </h2>
-        <div class="grid grid-cols-1 gap-3 md:grid-cols-3 mb-7">
-          <div class="bg-[#F9DF8A] w-fit col-span-1 rounded-xl px-5">
-            <h1 class="font2 font-semibold text-3xl mt-5 mb-5">
-              T-Shirt for Dog
-            </h1>
-            <p class="font1 opacity-70 mt-4 mb-4">
-              Discover a world of treats, toys, and essentials hand picked for
-              your furry friends.
-            </p>
-            <button
-              class="bg-white text-black px-5 py-2 rounded-md font-semibold mb-52"
-            >
-              Shop Now
-            </button>
-            <div class="absolute -mt-[95%] ml-28 md:-mt-[340px] md:ml-44">
-              <img src="./c1-assets/cute-pet-small.png" alt="" />
+        <div class="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-2 lg:grid-cols-3 mb-7  place-content-center content-center">
+          <div class="bg-[#F9DF8A] col-span-1 md:col-span-2 rounded-xl px-5 mb-10 ">
+
+            <div class="flex flex-col justify-around items-center ">
+              <div >
+                <h1 class="font2 font-semibold text-3xl mt-5 mb-5">
+                  T-Shirt for Dog
+                </h1>
+                <p class="font1 opacity-70 mt-4 mb-4">
+                  Discover a world of treats, toys, and essentials hand picked for
+                  your furry friends.
+                </p>
+                <button
+                  class="bg-white text-black px-5 py-2 rounded-md font-semibold "
+                >
+                  Shop Now
+                </button>
+              </div>
+              <div class="self-end -mt-24">
+                <img  src="./c1-assets/cute-pet-small.png" alt="" />
+              </div>
             </div>
+            
           </div>
 
           <div class="col-span-2 px-5">
             <!-- part 1 -->
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-2 mb-3">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-5 mb-3">
               <div
                 class="bg-white w-fit flex justify-center items-center gap-2 md:gap-3 rounded-xl border border-gray-400 px-3 py-0 md:px-4 md:py-5 md:pl-10 md:pr-20"
               >
@@ -464,44 +481,54 @@
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 mb-7 mt-7 gap-5">
           <div
-            class="col-span-2 rounded-xl px-5 bg-gradient-to-r from-red-100 to-blue-300 overflow-hidden"
+            class="col-span-2 rounded-xl px-5 bg-gradient-to-r from-red-100 to-blue-300 "
           >
-            <h4 class="font2 mt-5 mb-5">Under Price</h4>
-            <h2 class="font2 text-md md:text-2xl mt-4 mb-4 md:w-1/2">
-              Per Grooming Mitt
-            </h2>
-            <p class="font1 text-xl text-white opacity-70 mt-4 mb-4">
-              Easy Hair Removal
-            </p>
-            <h1 class="font2 text-black font-semibold text-3xl mt-5 mb-52">
-              $7.99
-            </h1>
-
-            <div class="absolute -mt-[95%] ml-28 md:-mt-[340px] md:ml-[40%]">
-              <img src="./c1-assets/cute-pet-small.png" alt="" />
-            </div>
+          <div class="flex justify-around items-center">
+            <div class=" ">
+              <h4 class="font2 mt-5 mb-5">Under Price</h4>
+              <h2 class="font2  text-md md:text-2xl mt-4 mb-4 ">
+                Per Grooming Mitt
+              </h2>
+              <p class="font1 text-xl text-white opacity-70 mt-4 mb-4">
+                Easy Hair Removal
+              </p>
+              <h1 class="font2 text-black font-semibold text-3xl mt-5 ">
+                $7.99
+              </h1>
+             </div>
+              <div >
+                <img src="./c1-assets/cute-pet-mid.png" alt="" />
+              </div>
+          </div>
+           
           </div>
           <div
-            class="col-span-1 self-start rounded-xl bg-gradient-to-r from-gray-100 to-yellow-200 w-full h-full "
+            class="col-span-1 self-start rounded-xl bg-gradient-to-r from-gray-100 to-yellow-200 w-full h-full lg:mb-48 "
           >
-            <h1 class="font2 font-semibold text-3xl px-2 mt-5 mb-5">
-              T-Shirt for Dog
-            </h1>
-
-            <h1 class="font2 text-[#FFDC26] font-semibold text-3xl mt-5 mb-52 px-2">
-              $7.99
-            </h1>
-            <div class="absolute -mt-[95%] ml-28 md:-mt-[250px] md:ml-44">
-              <img  src="./c1-assets/cute-pet-small.png" alt="" />
+          <div class="flex justify-around items-center">
+            <div class="pt-5">
+              <h1 class="font2 font-semibold text-3xl px-2 mt-5 mb-5 w-full">
+                T-Shirt for Dog
+              </h1>
+  
+              <h1 class="font2 text-[#FFDC26] font-semibold text-3xl mt-5 px-2">
+                $7.99
+              </h1>
             </div>
+              
+              <div >
+                <img  src="./c1-assets/cute-pet-small.png" alt="" />
+              </div>
+          </div>
+          
           </div>
         </div>
       </div>
     </section>
     <!-- Footer Part-1-->
-    <section class="container mx-auto relative mt-[300px] ">
+    <section id="respon1" class="container mx-auto relative mt-[300px] ">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 justify-center content-center absolute ml-4 px-4 -mt-[60%] md:-mt-[15%] bg-[#FFF9F4] py-5 w-[90%] md:w-full rounded-xl mx-auto"
+        class="grid grid-cols-1 md:grid-cols-2 justify-center content-center absolute ml-4 px-4 -mt-[60%] lg:-mt-[15%] xl:-mt-[] bg-[#FFF9F4] py-5 w-[90%] md:w-full rounded-xl mx-auto"
       >
         <div class="justify-self-center">
           <img
@@ -532,8 +559,8 @@
     </section>
     <!-- Footer Part-2-->
     <footer class="bg-[#ffed93]">
-      <div
-        class="grid grid-cols-1 md:grid-cols-3 content-center md:pt-56 md:pb-32 pt-[100%] pb-24 container mx-auto px-2"
+      <div id="respon2"
+        class="grid grid-cols-1 md:grid-cols-3 content-center pt-[100%]  lg:pt-[20%] pb-24 container mx-auto px-2"
       >
         <div class="content-end">
           <div class="flex gap-4 items-center pb-6">
